@@ -15,10 +15,9 @@ The project demonstrates PWM control, IR communication, non-blocking animations 
 ---
 ## 📹 Demo Video
 
-<video width="640" height="360" controls>
-  <source src="lampdemo.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+Check out the demo of the lamp in action:
+
+[![Watch the Demo](https://img.youtube.com/vi/TwzFgdyrvng/0.jpg)](https://www.youtube.com/watch?v=TwzFgdyrvng)
 
 ## 🎮 Features
 
