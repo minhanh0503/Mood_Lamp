@@ -13,6 +13,12 @@ The system controls:
 The project demonstrates PWM control, IR communication, non-blocking animations using `millis()`, and synchronized multi-LED effects.
 
 ---
+## 📹 Demo Video
+
+<video width="640" height="360" controls>
+  <source src="lampdemo.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ## 🎮 Features
 
