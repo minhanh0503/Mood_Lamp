@@ -1,163 +1,132 @@
-🌈 Smart RGB Lamp with IR Remote Control
-📌 Project Overview
+# 🌈 Smart RGB Lamp with IR Remote Control
 
-This project is a smart LED lighting system controlled using an IR remote.
-It features multiple lighting modes including rainbow effects, breathing animation, party mode, and synchronized lighting between an RGB LED and additional single LEDs.
+## 📖 Project Description
 
-The system is built using Arduino and demonstrates:
+This project is an Arduino-based smart lighting system controlled using an IR remote.  
+It features multiple lighting modes, synchronized animations, and smooth transitions between colors.
 
-PWM color control
+The system controls:
+- An RGB LED
+- Four single LEDs (Red, Green, Blue, Yellow)
+- An LCD display for mode feedback
 
-IR remote decoding
+The project demonstrates PWM control, IR communication, non-blocking animations using `millis()`, and synchronized multi-LED effects.
 
-Non-blocking animation using millis()
+---
 
-Mode switching system
+## 🎮 Features
 
-Synchronized multi-LED effects
+### Lighting Modes
 
-🎮 Features
-✨ Lighting Modes
+- 🔴 Red Mode
+- 🟢 Green Mode
+- 🔵 Blue Mode
+- 🟡 Yellow Mode
+- 🌈 Rainbow Mode (Fully Synchronized)
+- 🎲 Random Mode
+- 💨 Breathing Mode
+- 🎉 Party Mode
+- 🌙 Calm Mode
 
-🔴 Red Mode
+All modes can be switched instantly using the IR remote.
 
-🟢 Green Mode
+---
 
-🔵 Blue Mode
+## 🔧 Hardware Requirements
 
-🟡 Yellow Mode
+- Arduino Uno (or compatible board)
+- IR Receiver Module
+- RGB LED
+- 4 Single LEDs
+- Resistors
+- 16x2 LCD Display
+- Breadboard and jumper wires
+- IR Remote Control
 
-🌈 Rainbow Mode (Fully Synchronized)
+---
 
-🎲 Random Mode (Color Matching)
+## 📌 Pin Configuration
 
-💨 Breathing Mode
+### IR Receiver
+- Signal → Pin 2
 
-🎉 Party Mode
+### RGB LED (PWM Pins)
+- Red → Pin 3
+- Green → Pin 5
+- Blue → Pin 6
 
-🌙 Calm Mode
+### Single LEDs
+- Red → Pin 8
+- Green → Pin 9
+- Blue → Pin 10
+- Yellow → Pin 11
 
-💡 Key Functionalities
+### LCD Display
+- Uses pins: 12, 4, A0, A1, A2, A3
 
-All LEDs can operate in synchronized rhythm
+---
 
-Smooth rainbow animation
+## 🧠 How It Works
 
-Non-blocking code (no freezing when switching modes)
+1. The IR receiver reads signals from the remote.
+2. Each button changes the system `mode`.
+3. The `loop()` function runs animations based on the selected mode.
+4. Animations use `millis()` instead of `delay()` to prevent blocking.
+5. All LEDs can operate in synchronized rhythm with the RGB LED.
 
-Instant mode switching using IR remote
+---
 
-LCD display shows current mode
+## 🌈 Rainbow Mode
 
-🔧 Hardware Requirements
+- Smooth transition across the full color spectrum.
+- All LEDs change color together in sync.
+- Uses non-blocking timing.
+- Dimmed for a visually pleasant effect.
 
-Arduino board (Uno/Nano recommended)
+---
 
-IR Receiver Module
+## 🎉 Party Mode
 
-RGB LED
+- Rapid dynamic color changes.
+- All LEDs flash together.
+- Creates energetic lighting effects.
 
-4 Single LEDs (Red, Green, Blue, Yellow)
+---
 
-LCD Display (16x2)
+## 🌙 Calm Mode
 
-Resistors
+- Slow smooth color transitions.
+- Lower brightness for a relaxing atmosphere.
+- Designed for ambient lighting.
 
-Breadboard & jumper wires
+---
 
-IR Remote
+## 🚀 Improvements Made
 
-📍 Pin Configuration
-IR Receiver
+- Replaced blocking `delay()` with `millis()`
+- Enabled instant mode switching
+- Synchronized all LEDs in animation modes
+- Improved responsiveness and performance
 
-Signal → Pin 2
+---
 
-RGB LED
+## 📚 Libraries Used
 
-Red → Pin 3 (PWM)
+- IRremote
+- LiquidCrystal
 
-Green → Pin 5 (PWM)
+---
 
-Blue → Pin 6 (PWM)
+## 🔮 Future Enhancements
 
-Single LEDs
+- Brightness control via remote
+- Speed adjustment for animations
+- Music-reactive lighting
+- WiFi / Bluetooth control
+- Custom color selection mode
 
-Red → Pin 8
+---
 
-Green → Pin 9
+## 👨‍💻 Author
 
-Blue → Pin 10
-
-Yellow → Pin 11
-
-LCD
-
-Uses pins: 12, 4, A0, A1, A2, A3
-
-🧠 How It Works
-
-The IR remote sends signals to the Arduino.
-
-The Arduino reads the command using the IRremote library.
-
-The system changes the mode variable.
-
-The loop() function runs animations based on the selected mode.
-
-Animations use millis() for smooth performance (no blocking delays).
-
-All LEDs can be synchronized to follow the same rhythm.
-
-🌈 Rainbow Mode
-
-Smooth color transition across the full RGB spectrum.
-
-All LEDs change together in sync.
-
-Uses timed updates for smooth animation.
-
-Dimmed for better visual effect.
-
-🎉 Party Mode
-
-Rapid random colors.
-
-All LEDs flash together.
-
-Creates energetic lighting effects.
-
-🌙 Calm Mode
-
-Slow smooth color transitions.
-
-Dimmed brightness.
-
-Designed for relaxing ambient lighting.
-
-🚀 Improvements Made
-
-Removed blocking delay() in major modes
-
-Implemented millis() timing system
-
-Added synchronized LED behavior
-
-Improved mode switching responsiveness
-
-📚 Libraries Used
-
-IRremote
-
-LiquidCrystal
-
-🛠 Future Improvements
-
-Add brightness control via remote
-
-Add music-reactive mode
-
-Add speed control
-
-Add fade effects for single LEDs
-
-Add WiFi control (ESP version)
+Minh Anh
