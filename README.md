@@ -1,6 +1,6 @@
-# 🌈 Smart RGB Lamp with IR Remote Control
+# Smart RGB Lamp with IR Remote Control
 
-## 📖 Project Description
+## Project Description
 
 This project is an Arduino-based smart lighting system controlled using an IR remote.  
 It features multiple lighting modes, synchronized animations, and smooth transitions between colors.
@@ -13,13 +13,13 @@ The system controls:
 The project demonstrates PWM control, IR communication, non-blocking animations using `millis()`, and synchronized multi-LED effects.
 
 ---
-## 📹 Demo Video
+## Demo Video
 
 Check out the demo of the lamp in action:
 
 [![Watch the Demo](https://img.youtube.com/vi/TwzFgdyrvng/0.jpg)](https://www.youtube.com/watch?v=TwzFgdyrvng)
 
-## 🎮 Features
+## Features
 
 ### Lighting Modes
 
@@ -37,7 +37,7 @@ All modes can be switched instantly using the IR remote.
 
 ---
 
-## 🔧 Hardware Requirements
+## Hardware Requirements
 
 - Arduino Uno (or compatible board)
 - IR Receiver Module
@@ -50,7 +50,7 @@ All modes can be switched instantly using the IR remote.
 
 ---
 
-## 📌 Pin Configuration
+## Pin Configuration
 
 ### IR Receiver
 - Signal → Pin 2
@@ -71,7 +71,7 @@ All modes can be switched instantly using the IR remote.
 
 ---
 
-## 🧠 How It Works
+## How It Works
 
 1. The IR receiver reads signals from the remote.
 2. Each button changes the system `mode`.
@@ -81,7 +81,7 @@ All modes can be switched instantly using the IR remote.
 
 ---
 
-## 🌈 Rainbow Mode
+## Rainbow Mode
 
 - Smooth transition across the full color spectrum.
 - All LEDs change color together in sync.
@@ -90,7 +90,7 @@ All modes can be switched instantly using the IR remote.
 
 ---
 
-## 🎉 Party Mode
+## Party Mode
 
 - Rapid dynamic color changes.
 - All LEDs flash together.
@@ -98,7 +98,7 @@ All modes can be switched instantly using the IR remote.
 
 ---
 
-## 🌙 Calm Mode
+## Calm Mode
 
 - Slow smooth color transitions.
 - Lower brightness for a relaxing atmosphere.
@@ -106,7 +106,7 @@ All modes can be switched instantly using the IR remote.
 
 ---
 
-## 🚀 Improvements Made
+## Improvements Made
 
 - Replaced blocking `delay()` with `millis()`
 - Enabled instant mode switching
@@ -115,14 +115,14 @@ All modes can be switched instantly using the IR remote.
 
 ---
 
-## 📚 Libraries Used
+## Libraries Used
 
 - IRremote
 - LiquidCrystal
 
 ---
 
-## 🔮 Future Enhancements
+## Future Enhancements
 
 - Brightness control via remote
 - Speed adjustment for animations
@@ -132,6 +132,6 @@ All modes can be switched instantly using the IR remote.
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 Minh Anh
